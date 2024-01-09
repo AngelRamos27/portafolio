@@ -11,13 +11,13 @@ import SmArrow from '../../assets/Icons/SmArrow'
 const NavBar = ({ menuChecked, setMenuChecked }) => {
 
     let Sections = [
-        { section: 'About Me', link: '/aboutme', svg: <User /> },
-        { section: 'My Skills', link: '/myskills', svg: <Check /> },
-        { section: 'Proyects', link: '/proyects', svg: <Gear /> },
-        { section: 'Tecnologies', link: '/tecnologies', svg: <Box /> },
-        { section: 'Education', link: '/education', svg: <Book /> },
-        { section: 'Contact', link: '/contact', svg: <Email /> },
-        { section: 'All', link: '/', svg:<Gear/> },
+        { section: 'About Me', link: '/portafolio/aboutme', svg: <User /> },
+        { section: 'My Skills', link: '/portafolio/myskills', svg: <Check /> },
+        { section: 'Proyects', link: '/portafolio/proyects', svg: <Gear /> },
+        { section: 'Tecnologies', link: '/portafolio/tecnologies', svg: <Box /> },
+        { section: 'Education', link: '/portafolio/education', svg: <Book /> },
+        { section: 'Contact', link: '/portafolio/contact', svg: <Email /> },
+        { section: 'All', link: '/portafolio/', svg:<Gear/> },
     ]
     return (
         <>
