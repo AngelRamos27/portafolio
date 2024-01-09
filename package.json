@@ -2,7 +2,7 @@
   "name": "portafolio-web",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://AngelRamos27.github.io/Portafolio",
+  "homepage": "http://AngelRamos27.github.io/portafolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
