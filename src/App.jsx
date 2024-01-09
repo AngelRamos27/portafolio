@@ -13,7 +13,7 @@ function App() {
       path: 'https://angelramos27.github.io/portafolio/',
       element: <Base />,
       children: [
-        { path: 'aboutme', element: <AboutMe /> },
+        { path: '/aboutme', element: <AboutMe /> },
         { path: '/myskills', element: <Skills /> },
         { path: '/proyects', element: <Proyects /> },
         { path: '/tecnologies', element:  <Tecnologies/> },
