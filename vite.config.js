@@ -8,5 +8,5 @@ export default defineConfig({
     outDir: 'build',
     sourcemap: true,
   },
-  base:'/portafolio/'
+  base:'https://angelramos27.github.io/portafolio/'
 })
