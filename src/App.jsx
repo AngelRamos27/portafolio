@@ -10,7 +10,7 @@ import Tecnologies from './Routes/Tecnologies'
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/portafolio/',
+      path: 'https://angelramos27.github.io/portafolio/',
       element: <Base />,
       children: [
         { path: 'aboutme', element: <AboutMe /> },
