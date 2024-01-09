@@ -13,12 +13,12 @@ function App() {
       path: '/portafolio/',
       element: <Base />,
       children: [
-        { path: '/aboutme', element: <AboutMe /> },
-        { path: '/myskills', element: <Skills /> },
-        { path: '/proyects', element: <Proyects /> },
-        { path: '/tecnologies', element:  <Tecnologies/> },
-        { path: '/education', element: <Education /> },
-        { path: '/contact', element: <Contact /> },
+        { path: '/portafolio/aboutme', element: <AboutMe /> },
+        { path: '/portafolio/myskills', element: <Skills /> },
+        { path: '/portafolio/proyects', element: <Proyects /> },
+        { path: '/portafolio/tecnologies', element:  <Tecnologies/> },
+        { path: '/portafolio/education', element: <Education /> },
+        { path: '/portafolio/contact', element: <Contact /> },
       ],
     },
   ])
