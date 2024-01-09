@@ -24,7 +24,7 @@ export const Base = () => {
                 <NavBar menuChecked={menuChecked} setMenuChecked={setMenuChecked} />
                 <main className='md:pt-24 flex-grow h-screen bg-moradoOscuro'>
                     <div className='min-h-full w-full flex h-screen bg-moradoOscuro'>
-                        
+                        <Outlet />
                         <div className={`text-amarilloMZ w-full h-screen flex flex-col bg-moradoOscuro ${isHomePage ? '' : 'hidden'}`}>
                             <AboutMe />
                             <div className='flex flex-col justify-center items-center pt-32  bg-moradoOscuro '><p className="lg:text-6xl text-3xl text-center font-bold pb-36 px-4  pt-32">My Tecnical and human skills</p>
