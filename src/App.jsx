@@ -16,7 +16,7 @@ function App() {
         { path: '/aboutme', element: <AboutMe /> },
         { path: '/myskills', element: <Skills /> },
         { path: '/proyects', element: <Proyects /> },
-        { path: '/tecnologies', element:  <Tecnologies/> },
+        { path: '/technologies', element:  <Tecnologies/> },
         { path: '/education', element: <Education /> },
         { path: '/contact', element: <Contact /> },
       ],

@@ -23,26 +23,32 @@ import cat5 from '../assets/ProyectPics/cat5.png'
 import cat6 from '../assets/ProyectPics/cat6.png'
 import cat from '../assets/ProyectPics/cat.png'
 import CardProyect from '../Components/Animated/CardProyect';
+import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 const Proyects = () => {
+  const { t } = useTranslation()
+  const location = useLocation()
+  const isProyectsPage = location.pathname.includes('/proyects')
+
   const proyectos = [
     {
       name: "HEALTHERT",
-      desc: "Aplicación Móvil de monitoreo remoto para personas con problemas del corazón, monitoreo de BPM, Ubicación geográfica y funciones de cuidado.",
+      desc: "H1",
       pic: [HT1, HT2, HT3, HT4]
     },
     {
       name: "HEALTHERT WEB",
-      desc: "Versión web de HEALTHERT, enfocado en instituciones de salud, es decir hospitales y su personal. Médicos y enfermeras/os podrán monitorear a sus pacientes desde la aplicación móvil y la versión web.",
+      desc: "H2",
       pic: [hw1, hw2, hw3]
     },
     {
       name: "SISOGEM",
-      desc: "Sistema web para la gestión de actividades y documentación de organizaciones gubernamentales del estado de Michoacán.",
+      desc: "SISO",
       pic: [si1, si2, si3, si4, si5, si6]
     },
     {
       name: "La Reyna Catrina",
-      desc: "Sitio web para la exposisicón artistica del proyecto La Reyna Catrina, con panel de administrador, ventas y multi-idioma",
+      desc: "Reyna",
       pic: [cat, cat1, cat3, cat5, cat6]
     },
 
@@ -63,8 +69,8 @@ const Proyects = () => {
   }
   return (
     <>
-      <div className='w-full'>
-        <p className='text- text-center px-4'>Estos son algunos de los proyectos en los que he trabajado</p>
+      <div className={`w-full ${isProyectsPage ? 'pt-36' : ''}`}>
+        <p className={`text-amarilloMZ text-center px-4 ${isProyectsPage ? '' : 'pb-24'}`}>{t('proyecto_t')}</p>
         <div data-aos="fade-up" className='w-full h-screen grid gap-16 justify-center items-center  text-amarilloMZ bg-moradoOscuro'>
           {
             proyectos.map((proyecto, index) => (

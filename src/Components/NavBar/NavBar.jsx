@@ -8,20 +8,22 @@ import Email from '../../assets/Icons/Email'
 import { Link } from 'react-router-dom'
 import Arrow from '../../assets/Icons/Arrow'
 import SmArrow from '../../assets/Icons/SmArrow'
+import Switch from '../Switch/Switch'
+import Translate from '../../assets/Icons/Translate'
 const NavBar = ({ menuChecked, setMenuChecked }) => {
 
     let Sections = [
         { section: 'About Me', link: '/aboutme', svg: <User /> },
         { section: 'My Skills', link: '/myskills', svg: <Check /> },
         { section: 'Proyects', link: '/proyects', svg: <Gear /> },
-        { section: 'Tecnologies', link: '/tecnologies', svg: <Box /> },
+        { section: 'Technologies', link: '/technologies', svg: <Box /> },
         { section: 'Education', link: '/education', svg: <Book /> },
         { section: 'Contact', link: '/contact', svg: <Email /> },
-        { section: 'All', link: '/', svg:<Gear/> },
+        { section: 'All', link: '/', svg: <Gear /> },
     ]
     return (
         <>
-         <div className={`lg:hidden absolute cursor-pointer right-5 top-9 w-7 border-dark-purple border-2 rounded-full  ${!menuChecked && "rotate-180"}`} onClick={() => setMenuChecked(!menuChecked)}><SmArrow /></div>
+            <div className={`lg:hidden absolute cursor-pointer right-5 top-9 w-7 border-dark-purple border-2 rounded-full  ${!menuChecked && "rotate-180"}`} onClick={() => setMenuChecked(!menuChecked)}><SmArrow /></div>
             <div className={`fixed flex bg-negroPurpura z-[100] h-screen overflow-y-auto lg:overflow-y-hidden md:pt-20 md:w-72 pt-16 w-full 
             md:border-e-2 transition-all duration-200 ${menuChecked ? `` : `lg:-translate-x-56 -translate-x-full`}`}>
                 <div className={` ${menuChecked ? "w-72" : "w-0 "} bg-dark-purple h-screen p-5  pt-8 relative duration-300`}>
@@ -35,7 +37,7 @@ const NavBar = ({ menuChecked, setMenuChecked }) => {
                     </div>
                     <ul className="pt-6">
                         {Sections.map((Menu, index) => (
-                            <li key={index} className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
+                            <li key={index} className={`flex rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
                                          ${Menu.gap ? "mt-9" : "mt-2"} ${index === 0 && "bg-light-white"} `}>
                                 <div >{Menu.svg}</div>
                                 <Link to={Menu.link}>
@@ -44,6 +46,7 @@ const NavBar = ({ menuChecked, setMenuChecked }) => {
                                     </span></Link>
                             </li>
                         ))}
+                        <li className='flex text-gray-300 hover:text-amarilloMZ duration-300 p-2 gap-x-4 origin-left text-2xl'><Translate />Translate<Switch /></li>
                     </ul>
                 </div>
             </div>

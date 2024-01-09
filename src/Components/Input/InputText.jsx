@@ -16,7 +16,7 @@ const InputText = ({ type, onChange, name, id, placeholder, w, h }) => {
     return (
         <div className="relative">
             <label
-                className={`absolute left-2 transition-all duration-300 ${focused ? 'text-lg -top-7 text-amarilloMZ ' : 'text-2xl top-2 px-5 text-gray-600'}`}
+                className={`absolute left-2 transition-all duration-300 ${focused ? 'text-lg -top-7 text-amarilloMZ ' : 'text-xl top-2 px-5 text-gray-600'}`}
                 htmlFor={id}
             >
                 {placeholder}
@@ -29,7 +29,7 @@ const InputText = ({ type, onChange, name, id, placeholder, w, h }) => {
                 onChange={onChange}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
-                className={`${w} ${h} px-5 text-black text-2xl rounded-lg border-2 outline-none shadow-lg shadow-pink-600 peer focus:shadow-purple-600 hover:shadow-purple-600 duration-300`}
+                className={`${w} ${h} px-5 text-black text-1xl rounded-lg border-2 outline-none shadow-lg shadow-pink-600 peer focus:shadow-purple-600 hover:shadow-purple-600 duration-300`}
             />
         </div>
     )

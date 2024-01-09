@@ -16,7 +16,7 @@ const TextArea = ({ type, onChange, name, id, placeholder, w, h }) => {
         <>
             <div className="relative">
                 <label
-                    className={`absolute left-2 transition-all duration-300 ${focused ? 'text-lg -top-7 text-amarilloMZ ' : 'text-2xl top-2 px-5 text-gray-600'}`}
+                    className={`absolute left-2 transition-all duration-300 ${focused ? 'text-lg -top-7 text-amarilloMZ ' : 'text-xl top-2 px-5 text-gray-600'}`}
                     htmlFor={id}
                 >
                     {placeholder}
