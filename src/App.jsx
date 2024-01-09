@@ -10,7 +10,7 @@ import Tecnologies from './Routes/Tecnologies'
 function App() {
   <Routes> 
         <Route path="/portafolio" element={<Base/>} />
-        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/portafolio/aboutme" element={<AboutMe />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
   
