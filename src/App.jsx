@@ -13,7 +13,7 @@ function App() {
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-
+  
   return (
     <>
       <RouterProvider router={router}></RouterProvider>

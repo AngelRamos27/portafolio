@@ -5,8 +5,8 @@
   "homepage": "http://AngelRamos27.github.io/portafolio/",
   "type": "module",
   "scripts": {
-    "predeploy":"gh-pages -d build",
-    "deploy":"npm run build",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
