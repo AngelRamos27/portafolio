@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter,createHashRouter } from 'react-router-dom'
 import Base from './Routes/Base'
 import AboutMe from './Routes/AboutMe'
 import Skills from './Routes/Skills'
@@ -8,7 +8,7 @@ import Education from './Routes/Education'
 import Contact from './Routes/Contact'
 import Tecnologies from './Routes/Tecnologies'
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: <Base />,
