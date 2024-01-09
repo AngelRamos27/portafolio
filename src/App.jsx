@@ -9,8 +9,8 @@ import Contact from './Routes/Contact'
 import Tecnologies from './Routes/Tecnologies'
 function App() {
   <Routes> 
-        <Route path="/" element={<Base/>} />
-        <Route path="/about" element={<AboutMe />} />
+        <Route path="/portafolio" element={<Base/>} />
+        <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
