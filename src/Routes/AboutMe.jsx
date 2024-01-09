@@ -3,7 +3,7 @@ import me from '../assets/Photo/me.jpg'
 import FloatingDiv from '../Components/Animated/FloatingDiv'
 const AboutMe = () => {
   return (
-    <div data-aos="fade-up" className='w-full h-screen text-amarilloMZ  flex flex-col justify-center pb-5'>
+    <div data-aos="fade-up" className='w-full h-screen text-amarilloMZ  flex flex-col justify-center pb-5 pt-52 lg:pt-0'>
       <div className='w-full flex lg:flex-row flex-col lg:gap-0 gap-12 items-center justify-between'>
         <div className='w-3/4 flex items-center justify-center '>
           <FloatingDiv delay={0.6}>
