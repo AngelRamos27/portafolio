@@ -26,7 +26,7 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text)
       })
-    handleNotification('¡Tu mensaje ha sido enviado!')
+    handleNotification(t('msgSend'))
   }
 
 
