@@ -61,8 +61,8 @@ const Contact = () => {
           <br /> {t('contact_text1')}</p>
         <div className='w-full flex justify-center h-auto pt-5'>
           <form onSubmit={handleSubmit} className='pt-10 flex flex-col lg:w-96 w-64 p-5 rounded-lg gap-10 justify-center items-center'>
-            <InputText onChange={handleChange} w={"sm:w-[40rem] w-72 "} h={"h-12"} type="text" placeholder={t('nameI')} name={"user_name"} />
-            <InputText onChange={handleChange} w={"sm:w-[40rem] w-72"} h={"h-12"} type={"email"} placeholder={t('EmailI')} name={"user_email"} />
+            <InputText onChange={handleChange} w={"sm:w-[40rem] w-[22rem]"} h={"h-12"} type="text" placeholder={t('nameI')} name={"user_name"} />
+            <InputText onChange={handleChange} w={"sm:w-[40rem] w-[22rem]"} h={"h-12"} type={"email"} placeholder={t('EmailI')} name={"user_email"} />
             {emailTextError && (
               <>
                 <AnimatePresence>
@@ -73,7 +73,7 @@ const Contact = () => {
                 </AnimatePresence>
               </>
             )}
-            <TextArea onChange={handleChange} w={"sm:w-[40rem] w-72"} h={"h-28"} type={"text"} placeholder={t('Mesa')} name={"message"} />
+            <TextArea onChange={handleChange} w={"sm:w-[40rem] w-[22rem]"} h={"h-28"} type={"text"} placeholder={t('Mesa')} name={"message"} />
             <Button text={t('send')} w={"w-44"} h={"h-20"} sizeF={"text-2xl"} />
           </form>
         </div>
