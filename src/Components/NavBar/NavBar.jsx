@@ -24,7 +24,7 @@ const NavBar = ({ menuChecked, setMenuChecked }) => {
     return (
         <>
             <div className={`lg:hidden absolute cursor-pointer right-5 top-9 w-7 border-dark-purple border-2 rounded-full  ${!menuChecked && "rotate-180"}`} onClick={() => setMenuChecked(!menuChecked)}><SmArrow /></div>
-            <div className={`fixed flex bg-negroPurpura z-[100] h-screen overflow-y-auto lg:overflow-y-hidden md:pt-20 md:w-72 pt-16 w-full 
+            <div className={`fixed flex bg-negroPurpura z-[100] h-screen overflow-y-auto lg:overflow-y-hidden md:pt-20 md:w-72 xl:pt-5 pt-16 w-full 
             md:border-e-2 transition-all duration-200 ${menuChecked ? `` : `lg:-translate-x-56 -translate-x-full`}`}>
                 <div className={` ${menuChecked ? "w-72" : "w-0 "} bg-dark-purple h-screen p-5  pt-8 relative duration-300`}>
                     <div className={`absolute cursor-pointer right-5 top-9 w-7 border-dark-purple

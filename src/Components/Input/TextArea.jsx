@@ -29,7 +29,7 @@ const TextArea = ({ type, onChange, name, id, placeholder, w, h }) => {
                     onChange={onChange}
                     onFocus={handleFocus}
                     onBlur={handleBlur}
-                    className={`${w} ${h} px-5 text-black text-2xl rounded-lg border-2 outline-none 
+                    className={`${w} ${h} px-5 text-black text-2xl rounded-lg border-2 p-5 outline-none 
                 shadow-lg shadow-pink-600 peer focus:shadow-purple-600 hover:shadow-purple-600 duration-300 resize-none`}>
 
                 </textarea>
