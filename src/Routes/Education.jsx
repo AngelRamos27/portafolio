@@ -15,34 +15,34 @@ const Education = () => {
     <>
       <div data-aos="fade-up" className={`w-full text-amarilloMZ flex flex-col  justify-center bg-moradoOscuro h-screen ${isEdu ? 'pt-72' : ''}`}>
         <div className='w-full flex flex-col justify-center items-center h-screen'>
-          <div className='flex lg:flex-row flex-col items-center justify-center w-full gap-12 h-screen'>
-            <FloatingDiv delay={0.8} width={'relative group lg:w-[35rem]'}>
-              <img src={TecAzul} className='rounded-full sm:w-[27rem] sm:h-80 w-64 h-64  shadow-lg shadow-pink-500 group-hover:shadow-purple-600 duration-300'></img>
-              <div className="lg:translate-x-[1.8rem] xl:translate-x-[4rem] rounded-full sm:w-[27rem] sm:h-80 w-64 h-64 absolute inset-0 flex items-center justify-center bg-negroPurpura bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className='flex lg:flex-row flex-col items-center justify-center w-full lg:gap-12 sm:gap-16 gap-12 h-screen'>
+            <FloatingDiv delay={0.8} width={'relative rounded-full group lg:w-[30rem]'}>
+              <img src={TecAzul} className='rounded-full sm:w-[25rem] sm:h-[20rem] lg:w-[30rem] lg:h-80 w-64 h-64  shadow-lg shadow-pink-500 group-hover:shadow-purple-600 duration-300'></img>
+              <div className="rounded-full w-full h-full absolute inset-0 flex items-center justify-center bg-negroPurpura bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity">
                 <p className="text-white  text-center max-w-full p-5">
                   {t('bol0')}<br />{t('bol1')}</p>
               </div>
             </FloatingDiv>
-            <FloatingDiv delay={0.7} width={'relative group lg:w-[35rem]'}>
-              <img src={TecGuinda} className='rounded-full sm:w-[27rem] sm:h-80 w-64 h-64 shadow-lg shadow-pink-500 group-hover:shadow-purple-600 duration-300'></img>
-              <div className="lg:translate-x-[1.8rem] xl:translate-x-[4rem] rounded-full sm:w-[27rem] sm:h-80 w-64 h-64 absolute inset-0 flex items-center justify-center bg-negroPurpura bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-white   text-center max-w-full p-5">
+            <FloatingDiv delay={0.7} width={'relative rounded-full group lg:w-[30rem]'}>
+              <img src={TecGuinda} className='rounded-full sm:w-[25rem] sm:h-[20rem] lg:w-[30rem] lg:h-80 w-64 h-64 shadow-lg shadow-pink-500 group-hover:shadow-purple-600 duration-300'></img>
+              <div className="rounded-full w-full h-full absolute inset-0 flex items-center justify-center bg-negroPurpura bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity">
+                <p className="text-white  text-center max-w-full p-5">
                   {t('bol2')}<br />
                 </p>
               </div>
             </FloatingDiv>
-            <FloatingDiv delay={0.6} width={'relative group lg:w-[35rem] lg:hidden block'}>
-              <img src={Innova} className='rounded-full sm:w-[30rem] sm:h-80 w-64 h-64 shadow-lg shadow-pink-500 group-hover:shadow-purple-600 duration-300'></img>
-              <div className="lg:translate-x-[1.8rem] xl:translate-x-[2.5rem] rounded-full sm:w-[30rem] sm:h-80 w-64 h-64 absolute inset-0 flex items-center justify-center bg-negroPurpura bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity">
+            <FloatingDiv delay={0.6} width={'relative rounded-full group lg:w-[30rem]] lg:hidden block'}>
+              <img src={Innova} className='rounded-full sm:w-[25rem] sm:h-[20rem] lg:w-[30rem] lg:h-80 w-64 h-64 shadow-lg shadow-pink-500 group-hover:shadow-purple-600 duration-300'></img>
+              <div className="rounded-full sm:w-[25rem] w-full h-full absolute inset-0 flex items-center justify-center bg-negroPurpura bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity">
                 <p className="text-white text-center max-w-full p-5">
                   {t('bol3')}</p>
               </div>
             </FloatingDiv>
           </div>
-          <div className='lg:block hidden'>
-            <FloatingDiv delay={0.6} width={'relative group lg:w-[35rem]'}>
-              <img src={Innova} className='rounded-full sm:w-[30rem] sm:h-80 w-64 h-64 shadow-lg shadow-pink-500 group-hover:shadow-purple-600 duration-300'></img>
-              <div className="lg:translate-x-[1rem] xl:translate-x-[2.5rem] rounded-full sm:w-[30rem] sm:h-80 w-64 h-64 absolute inset-0 flex items-center justify-center bg-negroPurpura bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className='relative rounded-full group lg:w-[30rem] lg:block hidden'>
+            <FloatingDiv delay={0.6} width={'relative group lg:w-[30rem]'}>
+              <img src={Innova} className='rounded-full sm:w-[25rem] sm:h-[20rem] lg:w-[30rem] lg:h-80 w-64 h-64 shadow-lg shadow-pink-500 group-hover:shadow-purple-600 duration-300'></img>
+              <div className="rounded-full w-full h-full absolute inset-0 flex items-center justify-center bg-negroPurpura bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity">
                 <p className="text-white  text-center max-w-full p-5">
                   {t('bol3')}</p>
               </div>

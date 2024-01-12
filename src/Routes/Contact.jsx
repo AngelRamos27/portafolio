@@ -6,6 +6,7 @@ import Button from '../Components/Button/Button';
 import ModalNotificacion from '../Components/ModalNotification/ModalNotificacion';
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 const Contact = () => {
   const { t } = useTranslation()
@@ -37,6 +38,8 @@ const Contact = () => {
       setShowNotification(false)
     }, 3000)
   }
+  const location = useLocation()
+  const isContactPage = location.pathname.includes('/contact') 
 
   const handleChange = ({ target: { name, value } }) => {
     setData({ ...data, [name]: value })
@@ -56,8 +59,8 @@ const Contact = () => {
       <div data-aos="fade-up" className='z-40 flex justify-center items-center'>
         {showNotification && <ModalNotificacion msg={notificationMessage} show={showNotification} />}
       </div>
-      <div data-aos="fade-up" className='w-full flex flex-col justify-center bg-moradoOscuro h-screen text-amarilloMZ'>
-        <p className='lg:text-2xl text-md text-center px-4'>{t('contac_text')}
+      <div data-aos="fade-up" className={`w-full flex flex-col justify-center bg-moradoOscuro h-screen text-amarilloMZ ${isContactPage && 'pb-72 pt-96'}`}>
+        <p className='lg:text-lg text-md text-center px-4'>{t('contac_text')}
           <br /> {t('contact_text1')}</p>
         <div className='w-full flex justify-center h-auto pt-5'>
           <form onSubmit={handleSubmit} className='pt-10 flex flex-col lg:w-96 w-64 p-5 rounded-lg gap-10 justify-center items-center'>

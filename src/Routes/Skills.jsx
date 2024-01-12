@@ -42,12 +42,12 @@ const Skills = () => {
 
   return (
     <>
-      <div data-aos="fade-up" className='flex justify-center flex-col w-full '>
-        <p className={`text-lg text-center text-amarilloMZ px-4 ${isSkillsPage ? 'pt-[35rem]  lg:pt-0' : 'pb-32'}`}>{t('habilidades_texto')}</p>
-        <div className="w-full grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 grid-cols-2 gap-12 place-content-center place-items-center bg-moradoOscuro ">
+      <div data-aos="fade-up" className={`flex justify-center flex-col w-full ${isSkillsPage ? 'pt-[30rem] sm:pt-0' : 'pb-32'}`}>
+        <p className={`text-lg text-center text-amarilloMZ px-4 ${isSkillsPage ? ' sm:pt-56 lg:pt-0' : 'pb-32'}`}>{t('habilidades_texto')}</p>
+        <div className={`w-full grid lg:grid-cols-3 sm:grid-cols-2 sm:-m-3 md:m-0 md:grid-cols-2 grid-cols-2 sm:gap-12 gap-2 place-content-center place-items-center  ${isSkillsPage && 'pb-40'}`}>
           {skillsList.map((title, index) => (
             <motion.div
-              className="lg:w-[20rem] sm:w-80 w-36 h-44"
+              className="lg:w-[20rem] sm:w-auto w-auto h-44"
               key={index}
               initial="offscreen"
               animate="onscreen"

@@ -69,9 +69,9 @@ const Proyects = () => {
   }
   return (
     <>
-      <div className={`w-full ${isProyectsPage ? 'pt-36' : ''}`}>
-        <p className={`text-amarilloMZ text-center px-4 ${isProyectsPage ? '' : 'pb-24'}`}>{t('proyecto_t')}</p>
-        <div data-aos="fade-up" className='w-full h-screen grid gap-16 justify-center items-center  text-amarilloMZ bg-moradoOscuro'>
+      <div className={`w-full h-screen  ${isProyectsPage ? 'pt-24 pb-32 lg:pt-9' : ''}`}>
+        <p className={`text-lg text-amarilloMZ text-center px-4 ${isProyectsPage ? '' : 'pb-24'}`}>{t('proyecto_t')}</p>
+        <div data-aos="fade-up" className={`w-full  grid gap-16 justify-center items-center  text-amarilloMZ bg-moradoOscuro ${isProyectsPage ? 'pb-32' : 'pb-24'}`}>
           {
             proyectos.map((proyecto, index) => (
               <motion.div
