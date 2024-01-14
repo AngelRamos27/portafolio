@@ -47,7 +47,7 @@ const Skills = () => {
         <div className={`w-full grid lg:grid-cols-3 sm:grid-cols-2 sm:-m-3 md:m-0 md:grid-cols-2 grid-cols-2 sm:gap-12 gap-2 place-content-center place-items-center  ${isSkillsPage && 'pb-40'}`}>
           {skillsList.map((title, index) => (
             <motion.div
-              className="lg:w-[20rem] sm:w-auto w-auto h-44"
+              className="lg:w-[20rem] sm:w-auto w-auto h-44 duration-75"
               key={index}
               initial="offscreen"
               animate="onscreen"
