@@ -13,7 +13,7 @@ const AboutMe = () => {
       <div className='w-full flex lg:flex-row flex-col lg:gap-0 gap-12 items-center justify-between'>
         <div className='w-3/4 flex items-center justify-center pt-[20rem] sm:pt-[5rem] lg:pt-0'>
           <FloatingDiv delay={0.6} >
-            <img src={me} alt="Programmer Photo" className='md:max-w-md sm:max-w-sm max-w-xm rounded-full shadow-lg shadow-pink-500 hover:shadow-purple-600 duration-300 ' />
+            <img src={me} alt="Programmer Photo" className='select-none md:max-w-md sm:max-w-sm max-w-xm rounded-full shadow-lg shadow-pink-500 hover:shadow-purple-600 duration-300 ' />
           </FloatingDiv>
         </div>
         <div className=' lg:pt-3 lg:text-2xl text-md lg:text-left text-center p-5 lg:p-0 pt-12 w-full '>
