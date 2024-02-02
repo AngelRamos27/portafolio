@@ -28,6 +28,7 @@ const Contact = () => {
         console.log(error.text)
       })
     handleNotification(t('msgSend'))
+    e.target.reset()
   }
 
 
