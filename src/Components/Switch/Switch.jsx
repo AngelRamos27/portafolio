@@ -23,7 +23,6 @@ const Switch = () => {
       className={`mt-3 w-10 bg-gray-500 h-4 flex items-center ${
         !isOn ? 'justify-center' : 'justify-end bg-moradoMedio'
       }  p-1 rounded-full cursor-pointer`}
-      data-isOn={isOn}
       onClick={toggleSwitch}
     >
       <motion.div className={`w-6 h-6 ${!isOn ? 'bg-white' : 'bg-amarilloMZ'}  rounded-full `} layout transition={spring} />

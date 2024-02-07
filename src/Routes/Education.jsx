@@ -13,7 +13,7 @@ const Education = () => {
 
   return (
     <>
-      <div data-aos="fade-up" className={`w-full text-amarilloMZ flex flex-col  justify-center bg-moradoOscuro h-screen ${isEdu ? 'pt-72' : ''}`}>
+      <div data-aos="fade-up" className={`w-full text-amarilloMZ flex flex-col  justify-center h-screen ${isEdu ? 'pt-72' : ''}`}>
         <div className='w-full flex flex-col justify-center items-center h-screen'>
           <div className='flex lg:flex-row flex-col items-center justify-center w-full lg:gap-12 sm:gap-16 gap-12 h-screen'>
             <FloatingDiv delay={0.8} width={'relative rounded-full group lg:w-[30rem]'}>

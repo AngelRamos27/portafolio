@@ -60,7 +60,7 @@ const Contact = () => {
       <div data-aos="fade-up" className='z-40 flex justify-center items-center'>
         {showNotification && <ModalNotificacion msg={notificationMessage} show={showNotification} />}
       </div>
-      <div data-aos="fade-up" className={`w-full flex flex-col justify-center bg-moradoOscuro h-screen text-amarilloMZ ${isContactPage && 'pb-72 pt-96'}`}>
+      <div data-aos="fade-up" className={`w-full flex flex-col justify-center  h-screen text-amarilloMZ ${isContactPage && 'pb-72 pt-96'}`}>
         <p className='lg:text-lg text-md text-center px-4'>{t('contac_text')}
           <br /> {t('contact_text1')}</p>
         <div className='w-full flex justify-center h-auto pt-5'>

@@ -30,13 +30,13 @@ const Tecnologies = () => {
   const isTecPage = location.pathname.includes('/technologies')
 
   return (
-    <div data-aos="fade-up" className={`w-full h-screen flex flex-col justify-center items-center ${isTecPage ? 'sm:pb-72 pt-20 sm:pt-0' : 'pb-10'}`}>
+    <div data-aos="fade-up" className={`w-full h-screen flex flex-col justify-center items-center ${isTecPage ? 'sm:pb-76  pt-16 pb-20 sm:pt-0' : 'pb-10'}`}>
       <p className={`text-lg text-center text-amarilloMZ pb-12 px-4 ${isTecPage ? '' : 'pb-32 pt-16'}`}>{t('teno_text')}</p>
-      <div className='bg-moradoMedio lg:w-[50rem] lg:h-[200rem] lg:p-10 md:w-[40rem] md:h-[30rem] w-80 h-3/4 sm:w-[35rem] sm:h-[35rem] grid grid-cols-3 justify-center items-center rounded-lg shadow-lg shadow-pink-500 hover:shadow-purple-600 duration-300'>
+      <div className='bg-moradoMedio lg:w-[50rem] lg:h-[58rem] lg:p-10 md:w-[40rem] md:h-[30rem] w-80 h-3/4 sm:w-[35rem] sm:h-[35rem] grid grid-cols-3 justify-center items-center rounded-lg shadow-lg shadow-pink-500 hover:shadow-purple-600 duration-300'>
         {tec.map((image, index) => (
-          <div data-aos="fade-up">
+          <div data-aos="fade-up" className='lg:h-32'>
             <FloatingDiv delay={image.delay}>
-              <div key={index} className='lg:w-24 lg:h-24 flex justify-center w-16 h-16 p-3'>
+              <div key={index} className='lg:w-32  lg:h-24 flex justify-center w-16 h-16 p-1'>
                 {image.pic}
               </div>
             </FloatingDiv>
